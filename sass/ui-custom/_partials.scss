@@ -1,0 +1,11 @@
+.rounded-btn{
+    @include border-radius(40px);
+}
+
+.bgCover{
+    background-size: cover;
+    background-position: center;
+}
+.line-throgh{
+    text-decoration: line-through;
+}

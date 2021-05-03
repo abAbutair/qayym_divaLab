@@ -1,0 +1,119 @@
+.navbar-fixed {
+  height: auto;
+}
+header{
+  nav{
+    background-color:$bgNav;
+    padding:  0 80px;
+    position: absolute;
+    top:0;
+    z-index: 1;
+    .brand-logo{
+      padding: 1rem 0;
+      position: relative;
+      height: 100%;
+      img{
+        max-height: 100%;
+      }
+    }
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    ul{
+      display: flex;
+      align-items: center;
+      align-self: stretch;
+      li{
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        font-weight: bold;
+        &.active{
+          background-color: lighten($mainClr, 65%);
+          position: relative;
+          &:before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            top:0;
+            #{$left}:0;
+            height: 4px;
+            background-color: $secondaryClr;
+          }
+        }
+        a {
+          color: #000;
+          display: flex;
+          align-items: center;
+          align-self: stretch;
+          position: relative;
+          &:before{
+            content: '';
+            position: absolute;
+            width: 0;
+            top:0;
+            #{$left}:50%;
+            height: 4px;
+            background-color: $secondaryClr;
+            @include transition(all);
+          }
+          &:after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: lighten($mainClr, 65%);
+            #{$left}:0;
+            @include translate(0, -100%);
+            @include transition(all);
+            z-index: -1;
+          }
+          &:hover{
+            background-color: transparent;
+            &:before{
+              width: 100%;
+              #{$left}:0;
+            }
+            &:after{
+              @include translate(0, 0);
+            }
+          }
+        }
+        &.tel {
+          padding-#{$left}:15px;
+          padding-#{$right}:0;
+          a {
+            color: $secondaryClr;
+            &:hover {
+              background-color: transparent;
+              &:before, &:after{
+                display: none;
+              }
+            }
+          }
+          span{
+            font-family: Arial;
+            padding-#{$left}:0.25rem;
+          }
+        }
+
+      }
+    }
+  }
+  .sidenav-trigger{
+    margin: 0;
+  }
+}
+footer{
+  background-color: $mainClr;
+  padding: 30px 15px;
+  color:#fff;
+  .social-media{
+    display: none;
+    a{
+      color: #fff;
+    }
+  }
+}

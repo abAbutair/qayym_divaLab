@@ -1,0 +1,43 @@
+//-----imports
+@import "materialize";
+
+@import "ui-custom/_variables";
+@import "ui-custom/_colors";
+@import "ui-custom/_mixins";
+@import "ui-custom/_partials";
+@import "ui-custom/_grid";
+@import "ui-custom/_animation";
+@import "ui-custom/_ui-kit";
+@import "ui-custom/_general";
+@import "ui-custom/_header-footer";
+@import "ui-custom/_main";
+@import "ui-custom/_responsive";
+
+
+
+
+//-----fonts
+@font-face {
+  font-family: "raleway-regular";
+  src: url("../webfonts/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "raleway-medium";
+  src: url("../webfonts/Raleway-Medium.ttf");
+}
+@font-face {
+  font-family: "raleway-light";
+  src: url("../webfonts/Raleway-Light.ttf");
+}
+@font-face {
+  font-family: "raleway-semi-bold";
+  src: url("../webfonts/Raleway-SemiBold.ttf");
+}
+@font-face {
+  font-family: "raleway-bold";
+  src: url("../webfonts/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: "raleway-black";
+  src: url("../webfonts/Raleway-Black.ttf");
+}

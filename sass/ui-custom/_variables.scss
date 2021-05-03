@@ -1,0 +1,66 @@
+// colors
+$mainClr:#254b58;
+$secondaryClr:#bf3641;
+$darkClr:#0d1e26;
+$m-grey:#eaeaea;
+$textGrey: #a6a6a6;
+
+$alphaDark: rgba(13,30,38,.55);
+$alphLight:rgba(255,255,255,0.7);
+
+$bgNav:#ebf2f2;
+
+$text-color:#333;
+
+
+$secPadding: 20px 0 20px 0;
+
+// font-sizes
+$titles-font: 48px;
+
+
+
+
+//----- translate -----
+$isRtl:ltr;
+
+$left: left;
+$right: right;
+$direction:ltr;
+$minus: 1;
+$bodyFont: raleway-regular;
+$headingFont: raleway-bold;
+$headingFontLight: raleway-semi-bold;
+$text-font: raleway-medium; //product-details-new
+$langFont:DroidKufi;
+
+$double-right: "\f101";
+$double-left: "\f100";
+$chevron-left:"\f053";
+$chevron-right:"\f054";
+
+$rotate90: 90deg;
+
+$flex-direction:row;
+$flex-reverse: row-reverse;
+
+
+@if $isRtl == rtl
+{
+    $left: right;
+    $right: left;
+    $direction:rtl;
+    $minus: -1;
+    $bodyFont: DroidKufi;
+    $headingFont: DroidKufi;
+    $headingFontLight: DroidKufi;
+    $langFont:RobotoSlab;
+    $navSize:18px;
+    $double-right: "\f100";
+    $double-left: "\f101";
+    $chevron-left:"\f054";
+    $chevron-right:"\f053";
+    $rotate90: -90deg;
+    $flex-direction:row-reverse;
+    $flex-reverse: row;
+}

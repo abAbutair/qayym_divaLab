@@ -1,0 +1,381 @@
+/*----------------------------------------------------------------------*/
+@media only screen and (max-width: 1600px) {
+  .products-sec .card .card-stacked{
+    padding: 40px;
+  }
+  .latest-blog {
+    .latest-blog-block{
+      padding-top: 60%;
+    }
+    .latest-blog-bio{
+      margin: -30% 30px 0;
+    }
+  }
+}
+/*----------------------------------------------------------------------*/
+@media only screen and (max-width: 1366px) {
+  .products-sec .card .card-stacked{
+    padding: 30px;
+  }
+  .improve .content{
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  .latest-blog {
+    .latest-blog-bio{
+      margin: -30% 15px 0;
+      padding: 30px 20px;
+    }
+  }
+  .contact-us .contact-info p{
+    height: 100px;
+  }
+}
+
+/* X-Large Devices
+----------------------------------------------------------------------*/
+@media only screen and (max-width: 1200px) {
+/*--------------------------------------------------------------------*/
+  .request-demo{
+    padding: 2.5rem 3rem;
+  }
+  .worksFor-sec{
+    .service {
+      padding: 2rem 0;
+      h6 {
+        font-size: 14px;
+      }
+    }
+  }
+  header nav .brand-logo{
+    width: 160px;
+    img{
+      width: 100%;
+    }
+  }
+  nav ul a{
+    padding: 0 10px;
+  }
+  .products-sec .card .card-stacked{
+    padding: 25px;
+  }
+  .related-blog-block{
+    margin-bottom: 25px;
+  }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+/*--------------------------------------------------------------------*/
+  header {
+    nav{
+      padding: 0 50px;
+    }
+  }
+  .social-media-container {
+    width: 60px;
+  }
+  .carousel{
+    .items{
+      width: calc(100% - 60px);
+    }
+    .indicators{
+      #{$right}:10px;
+    }
+  }
+  .request-demo {
+    h3{
+      font-size: 30px;
+      span{
+        font-size: 3rem;
+      }
+    }
+  }
+  .products-sec{
+    .card{
+      .card-stacked{
+        padding: 40px;
+        .card-content{
+          padding-bottom: 25px;
+        }
+      }
+    }
+  }
+  .contact-us .contact-info p{
+    height: 110px;
+  }
+}
+
+
+
+/* Large Devices, Wide Screens
+----------------------------------------------------------------------*/
+@media only screen and (max-width: 992px) {
+/*--------------------------------------------------------------------*/
+  footer {
+    .social-media {
+      display: block;
+      margin-bottom: 0;
+      li{
+        display: inline-block;
+        padding:  0 8px;
+      }
+    }
+  }
+  .carousel{
+    .items{
+      width: 100%;
+      &:after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: $alphaDark;
+        position: absolute;
+        #{$left}:0;
+      }
+    }
+    .indicators{
+      .indicator-item{
+        background-color: #fff;
+      }
+    }
+  }
+  .request-demo {
+    //width: calc(100% - 35px);
+    //height: auto;
+    //background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem 2rem;
+    //position: absolute;
+    //top: 50%;
+    //@include translate(0, -50%);
+    h3{
+      font-size: 28px;
+      span{
+        font-size: 40px;
+      }
+    }
+  }
+  .social-media-container{
+    display: none;
+  }
+
+  .worksFor-sec{
+    .service {
+      h6 {
+        font-size: 16px;
+      }
+    }
+  }
+  header nav .brand-logo{
+    width: 220px;
+  }
+  .carousel .items:after{
+    z-index: -1;
+  }
+  .improve{
+    background-size: cover;
+  }
+  .banner:after{
+    width: 100%;
+  }
+  .banner{
+    padding: 35px 0;
+  }
+  .carousel .items:after{
+    display: none;
+  }
+  .carousel{
+    height: 60% !important;
+  }
+  .p-section02{
+    background: linear-gradient(to right, #e6e6e6 100%, #fff 0);
+  }
+  .p-section02 .statics-wrapp{
+    margin: 0;
+    transform: translate(0, 0);
+    width: 100%;
+  }
+  .intro{
+    height: auto !important;
+  }
+  .latest-blog {
+    .latest-blog-block{
+      padding-top: 50%;
+    }
+    .latest-blog-bio{
+      margin: 0;
+    }
+  }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  /*--------------------------------------------------------------------*/
+  .products-sec .card .card-image{
+    width: 100%;
+  }
+  .products-sec{
+    .card{
+      .card-stacked{
+        height: auto;
+        padding: 40px;
+        .card-content{
+          .name{
+            font-size: 22px;
+          }
+        }
+      }
+      .item_num{
+        height: auto;
+        display: flex;
+        padding: 5px 1.25rem;
+        #{$left}: 0 !important;
+        transform: translate(0,-100%) !important;
+        span{
+          &:first-child{
+            &:after{
+              height: 1px;
+              width: 90px;
+              margin: 10px;
+              display: inline-block;
+            }
+          }
+        }
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .improve .content .icons{
+    flex-wrap: wrap;
+  }
+  .improve .content .icon{
+    width: 100%;
+    margin-bottom: 15px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  .page_title{
+    font-size: 36px;
+  }
+  .banner nav a{
+    font-size: 14px;
+  }
+  .breadcrumb:before{
+    margin: 0;
+    font-size: 20px;
+  }
+  .request-demo {
+    h3{
+      font-size: 22px;
+      line-height: 32px;
+    }
+    a{
+      height: 40px;
+      line-height: 40px;
+      border-radius: 30px;
+      font-size: 12px;
+    }
+  }
+  .carousel.carousel-slider .carousel-item p{
+    font-size: 14px;
+    line-height: 24px;
+    margin: 20px 0;
+  }
+  .carousel.carousel-slider .carousel-item{
+    min-height: auto;
+  }
+}
+
+
+
+/* Medium Devices, Desktops
+----------------------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+/*--------------------------------------------------------------------*/
+  header{
+    nav{
+      padding: 0 30px;
+      .brand-logo{
+        height: 90px;
+      }
+    }
+  }
+  .worksFor-sec{
+    .service {
+      h6 {
+        font-size: 14px;
+      }
+    }
+  }
+  header nav .brand-logo{
+    #{$left}: 0;
+    @include translate(0, 0);
+  }
+  .page_title{
+    font-size: 26px;
+  }
+  .latest-blog {
+    .latest-blog-bio{
+      margin-bottom: 25px;
+    }
+  }
+}
+
+
+
+
+/* Extra Small Devices, Tablets
+----------------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+/*--------------------------------------------------------------------*/
+  .sec-title {
+    font-size: 32px;
+  }
+  body{
+    font-size: 14px;
+  }
+  //section{
+  //  padding-bottom: 0;
+  //}
+  .worksFor-sec{
+    .service{
+      .color-overlay{
+        max-width: 70px;
+      }
+    }
+  }
+  .request-demo{
+    padding: 10px 30px 10px 10px;
+    h3{
+      margin-bottom: 10px;
+    }
+    p{
+      margin: 10px 0;
+    }
+  }
+  header nav .brand-logo{
+    width: 150px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+
+
+/*  Extra Small Devices, Phones
+----------------------------------------------------------------------*/
+@media only screen and (max-width: 360px) {
+/*--------------------------------------------------------------------*/
+}
+
+
+
